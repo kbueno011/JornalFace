@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JornalFace - Perfil</title>
+  <link rel="stylesheet" href="../../../css/perfil.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2 class="logo">JF</h2>
+    <p class="brand">JornalFace</p>
+    <nav>
+      <a href="#">🏠 Página inicial</a>
+      <a href="#">🔍 Pesquisa</a>
+      <a href="#">➕ Criar</a>
+      <a href="#">💬 Mensagens</a>
+      <a href="#">👤 Perfil</a>
+    </nav>
+    <div class="bottom-nav">
+      <a href="#">☰ Mais</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="profile-header">
+      <img id="profile-pic" src="" alt="Foto de perfil" />
+      <div class="profile-info">
+        <div class="top-line">
+          <h1 id="username">Usuário</h1>
+          <div class="buttons">
+            <button>Editar perfil</button>
+            <button>Itens arquivados</button>
+          </div>
+        </div>
+        <p>
+          <span id="posts">0</span> publicações • 
+          <span id="followers">0</span> seguidores • 
+          <span id="following">0</span> seguindo
+        </p>
+        <p id="bio"></p>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight">
+        <img src="" id="highlight-1" alt="Destaque 1">
+      </div>
+      <div class="highlight">
+        <div class="add-highlight">+</div>
+        <span>novo</span>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="active">📸 Publicação</button>
+      <button>🎞 Reels</button>
+      <button>🔖 Marcados</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Cards vão aqui via JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

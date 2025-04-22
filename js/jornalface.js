@@ -22,7 +22,7 @@ const enviarDados = async (email, password) => {
         const resultado = await resposta.json(); 
         if (resultado.success) { // Se a resposta da API for "true"
             alert("Login bem-sucedido! Redirecionando...");
-            window.location.href = "home.html"; // Redireciona para a tela de registro
+            window.location.href = "../src/pages/screens/home.html"; // Redireciona para a tela de registro
         } else {
             alert("Erro ao fazer login. Verifique suas credenciais.");
         }

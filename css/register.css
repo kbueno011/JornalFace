@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('./img/teladefundo.png') no-repeat center center/cover;
+    background: url('../src/img/teladefundo.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +15,6 @@ body {
     align-items: center;
     width: 70vh;
 }
-
 .register-box {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;

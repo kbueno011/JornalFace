@@ -49,9 +49,8 @@
         display: flex;
         position: absolute;
         flex-direction: column;
-        gap: 8px;
-        align-items: center; /* Alinha os itens no centro horizontalmente */
-        justify-content: top; /* Garante que os itens fiquem centralizados */
+        gap: 15px;
+        
     }
     
     
@@ -60,7 +59,7 @@
         align-items: center;
         gap: 16px;
         padding: 12px;
-        border-radius: 8px;
+        border-radius: 19vh;
         text-decoration: none;
         color: var(--text-primary);
         font-size: 16px;
@@ -151,7 +150,6 @@
     
     /* Estilos para posts */
     .post {
-        background: var(--bg-secondary);
         border: 1px solid var(--border-color);
         border-radius: 8px;
         margin-bottom: 24px;
@@ -463,8 +461,7 @@
     .right-column::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
-    
-    /* Botão de alternar dark/light mode */
+
     .theme-toggle {
         position: fixed;
         bottom: 20px;
@@ -482,94 +479,4 @@
         font-size: 20px;
         z-index: 1000;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Responsividade */
-    @media (max-width: 1000px) {
-        .right-column {
-            display: none;
-        }
-        
-        .app-container {
-            grid-template-columns: 245px 1fr;
-        }
-        
-        .center-column {
-            margin-left: 275px;
-            margin-right: 20px;
-        }
-    }
-    
-    @media (max-width: 800px) {
-        .left-column {
-            width: 80px;
-            background-color: var(--bg-dark);
-        }
-        
-        .nav-item span {
-            display: none;
-        }
-        
-        .logo {
-            font-size: 0;
-            background: url('logo-icon.png') center no-repeat;
-            background-size: contain;
-            width: 40px;
-            height: 40px;
-            margin: 20px auto 30px;
-        }
-        
-        .center-column {
-            margin-left: 100px;
-        }
-        
-        .theme-toggle {
-            bottom: 70px;
-            left: 10px;
-        }
-    }
-    
-    @media (max-width: 500px) {
-        .app-container {
-            grid-template-columns: 1fr;
-            padding: 0;
-        }
-        
-        .left-column {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border-color);
-            z-index: 100;
-            padding: 10px 0;
-        }
-        
-        .nav-menu {
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 0;
-        }
-        
-        .more-menu {
-            margin-top: 0;
-        }
-        
-        .center-column {
-            right:100vh;
-            margin-bottom: 60px;
-            grid-column: 1;
-            padding: 10px;
-        }
-        
-        .logo {
-            display: none;
-        }
-        
-        .theme-toggle {
-            bottom: 70px;
-            left: 10px;
-        }
     }
